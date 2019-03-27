@@ -1,0 +1,64 @@
+
+p {
+    font-family: $fontStack;
+    font-size: $normalTextSize;
+    color: $primaryColor;
+    margin: 0;
+}
+
+.titleText {
+    font-family: $fontStack;
+    font-size: $normalTextSize;
+    line-height: $normalLineHeight;
+    font-weight: $heavyFontWeight;
+    color: $primaryColor;
+    margin: 0;
+}
+
+.normalText {
+    font-family: $fontStack;
+    font-size: $normalTextSize;
+    line-height: $normalLineHeight;
+    font-weight: $normalFontWeight;
+    color: $primaryColor;
+    margin: 0;
+    opacity: .8;
+}
+
+.lightText {
+    font-family: $fontStack;
+    font-size: $normalTextSize;
+    line-height: $normalLineHeight;
+    color: $primaryColor;
+    margin: 0;
+    opacity: .33;
+}
+
+a {
+    text-decoration: underline;
+}
+
+.filterText {
+    font-weight: $boldFontWeight;
+    cursor: pointer;
+}
+
+.filterNormal {
+    transition: 0.1s all;
+}
+
+.filterNormal:hover {
+    //opacity: 0.54;
+    text-decoration: underline;
+}
+
+.filterSelected {
+    text-decoration: underline;
+    transition: 0.1s all;
+}
+
+.filterSelected:hover {
+    //opacity: 0.54;
+    text-decoration: none;
+}
+

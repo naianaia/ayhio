@@ -1,0 +1,26 @@
+@import url('https://rsms.me/inter/inter.css');
+html,body { 
+    font-family: 'Inter', sans-serif; 
+    box-sizing: border-box;
+}
+
+@supports (font-variation-settings: normal) {
+    html,body { font-family: 'Inter var', sans-serif; }
+}
+
+$fontStack: 'Inter var', sans-serif;
+$normalTextSize: 16px;
+$normalLineHeight: 28px;
+$normalFontWeight: 400;
+$boldFontWeight: 700;
+$heavyFontWeight: 500;
+
+$dynamicTitleTextSize: 48px;
+$dynamicTitleLineHeight: 64px;
+
+$primaryColor: #000000;
+$primaryColorLight: rgba(0,0,0,.33);
+$lightColor: white;
+
+$primarySpacing: 32px;
+$secondarySpacing: 16px;

@@ -1,0 +1,64 @@
+
+.flow {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-top: 120px;
+}
+
+.flowItemContainer {
+    width: calc((100% - 128px) / 3);
+}
+
+.flowItemA {
+    width: 100%;
+    height: 0;
+    padding-bottom: 42.8%;
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.flowItem {
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.flowImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.flowItemOverlay {
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: calc(100% - 64px);
+	height: calc(100% - 64px);
+    background: white;
+    opacity: 0;
+    padding: 32px;
+    transition: 0.1s all;
+}
+
+.flowItemContainer:hover .flowItemOverlay {
+    opacity: .9;
+}
+
+@media only screen and (max-width: 480px) {
+    .flowItemContainer {
+        width: calc(100% - 32px);
+    }
+
+    .flowItemA {
+        margin-bottom: 16px;
+    }
+
+    .filterMenu {
+        display: none;
+    }
+  }

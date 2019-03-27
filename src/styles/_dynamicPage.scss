@@ -1,0 +1,57 @@
+.dynamicTitleText {
+    font-family: $fontStack;
+    font-size: $dynamicTitleTextSize;
+    line-height: $dynamicTitleLineHeight;
+    font-weight: $heavyFontWeight;
+    color: $primaryColor;
+    margin: 0;
+    text-align: center;
+}
+
+.dynamicCaptionText {
+    font-family: $fontStack;
+    font-size: $normalTextSize;
+    line-height: $normalLineHeight;
+    font-weight: $normalFontWeight;
+    color: $primaryColor;
+    margin: 0;
+    text-align: center;
+    //font-style: italic;
+}
+
+.dynamicImageFull {
+    width: 100%;
+
+}
+
+.dynamicImageGallery {
+    width: 64rem;
+    margin-left: -12rem;
+    margin-right: -12rem;
+}
+
+.dynamicVideo{
+    width: 100%;
+
+}
+
+.dynamicPage {
+    margin-top: 120px;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 160px;
+}
+
+@media only screen and (max-width: 480px) {
+    .dynamicPage {
+        margin-top: 120px;
+        width: calc(100% - 32px);
+    }
+
+    .dynamicImageGallery {
+        width: calc(100% + 32px);
+        margin-left: -16px;
+        margin-right: -16px;
+    }
+}

@@ -1,0 +1,27 @@
+[
+    {
+        "type": "title",
+        "content": "organica"
+    },
+    {
+        "type": "caption",
+        "content": "Generative 3D audiovisual sculptures"
+    },
+    {
+        "type": "spacing",
+        "content": null
+    },
+    {
+        "type": "video",
+        "content": "organica.mov"
+    },
+    {
+        "type": "spacing",
+        "content": null
+    },
+    {
+        "type": "video",
+        "content": "laspalmas.mov"
+    }
+    
+]

@@ -1,0 +1,50 @@
+[
+    {
+        "type": "title",
+        "content": "tonoto"
+    },
+    {
+        "type": "caption",
+        "content": "generative ink / dreaming in circles"
+    },
+    {
+        "type": "spacing",
+        "content": null
+    },
+    {
+        "type": "imageFull",
+        "content": "tonoto1.png"
+    },
+    {
+        "type": "spacing",
+        "content": null
+    },
+    {
+        "type": "text",
+        "content": "Using processing, I created a generative audiovisual piece that draws circles from music. It simulates brush strokes with lines of varying width and color. The line dynamics are calculated from a number of features of an audio input, which are derived from statistics of the fft sampled at 60hz."
+    },
+    {
+        "type": "spacing",
+        "content": null
+    },
+    {
+        "type": "imageFull",
+        "content": "tonoto2.png"
+    },
+    {
+        "type": "spacing",
+        "content": null
+    },
+    {
+        "type": "imageFull",
+        "content": "tonoto3.png"
+    },
+    {
+        "type": "spacing",
+        "content": null
+    },
+    {
+        "type": "text",
+        "content": "This will form the visual component of a live piece in which the parameters are manipulated live with an AKAI MPC controller."
+    }
+]

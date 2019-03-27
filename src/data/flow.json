@@ -1,0 +1,212 @@
+
+[
+    {
+        "name": "Planetarium [under construction]",
+        "year": "2019",
+        "cover": "planetarium.png",
+        "byline": "On-prem ML infrastructure for enterprise",
+        "link": "#",
+        "categories": ["product","design", "code"]
+    },
+    {
+        "name": "temple galaxia [spoken]",
+        "year": "2018",
+        "cover": "galaxia.png",
+        "byline": "Lighting pattern for the 2018 Burning Man temple",
+        "link": "https://galaxiaspoken.org",
+        "categories": ["art"]
+    },
+    {
+        "name": "Running away from home",
+        "year": "2015-2018",
+        "cover": "travel.png",
+        "byline": "Adventures in travel hacking",
+        "link": "https://my.flightradar24.com/Absentious",
+        "categories": ["travel"]
+    },
+    {
+        "name": "Duet",
+        "year": "2019",
+        "cover": "duet.png",
+        "byline": "GPT-2 for writer's block",
+        "link": "https://duet.archive.house",
+        "categories": ["design", "code"]
+    },
+    {
+        "name": "ukiyo vertigo",
+        "year": "2018",
+        "cover": "photography/ukiyo.png",
+        "byline": "tokyo / a7rii",
+        "link": "./gallery/ukiyo",
+        "categories": ["photography"]
+    },
+    {
+        "name": "Remy",
+        "year": "2018",
+        "cover": "remy.png",
+        "byline": "Your personal chef for $7 a meal",
+        "link": "https://remychef.com",
+        "categories": ["product","design", "code"]
+    },
+    {
+        "name": "Scribe",
+        "year": "2018",
+        "cover": "scribe.png",
+        "byline": "Active Reading",
+        "link": "https://play.google.com/store/apps/details?id=io.getscribe.android&hl=en_US",
+        "categories": ["product","design", "code"]
+
+    },
+    {
+        "name": "andata",
+        "year": "2018",
+        "cover": "photography/andata.png",
+        "byline": "tokyo / a7rii",
+        "link": "gallery/andata",
+        "categories": ["photography"]
+    },
+    {
+        "name": "caffinity",
+        "year": "2018",
+        "cover": "caffinity.png",
+        "byline": "Cafe directory for work",
+        "link": "https://caffinity.co",
+        "categories": ["design", "code"]
+    },
+    {
+        "name": "organica",
+        "year": "2018",
+        "cover": "art/b_org_a_short_fast.gif",
+        "byline": "Generative 3D audiovisual sculptures",
+        "link": "./organica",
+        "categories": ["art", "code"]
+    },
+    {
+        "name": "nordlight",
+        "year": "2018",
+        "cover": "photography/nordlight.png",
+        "byline": "lofoten islands / a7rii",
+        "link": "/gallery/nordlight",
+        "categories": ["photography"]
+    },
+    {
+        "name": "tonoto",
+        "year": "2018",
+        "cover": "art/tonoto.png",
+        "byline": "Generative ink / Dreaming in circles",
+        "link": "./tonoto",
+        "categories": ["art", "code"]
+    },
+    {
+        "name": "Horizons",
+        "year": "2018",
+        "cover": "horizons.png",
+        "byline": "Travel planning for humans",
+        "link": "http://ayh.io/horizons",
+        "categories": ["design", "code"]
+    },
+    {
+        "name": "empty space",
+        "year": "2017",
+        "cover": "photography/namibia.png",
+        "byline": "namibia / a7rii",
+        "link": "gallery/namibia",
+        "categories": ["photography"]
+    },
+    {
+        "name": "Mavencook",
+        "year": "2017 - 2018",
+        "cover": "mavencook.png",
+        "byline": "Helping home cooks monetize their talent",
+        "link": "http://ayh.io/mavencook",
+        "categories": ["product","design"]
+    },
+    {
+        "name": "songs, ideas we forgot",
+        "year": "2017",
+        "cover": "photography/songs.png",
+        "byline": "one night in hong kong / a7rii",
+        "link": "gallery/songs",
+        "categories": ["photography"]
+    },
+    {
+        "name": "COMPOSITION Zine",
+        "year": "2017",
+        "cover": "art/composition.png",
+        "byline": "Pushing boundaries in photography",
+        "link": "http://ayh.io/composition.html",
+        "categories": ["design","photography"]
+    },
+    {
+        "name": "the color of fire",
+        "year": "2017",
+        "cover": "photography/color.png",
+        "byline": "patagonia / a7rii",
+        "link": "gallery/color",
+        "categories": ["photography"]
+    },
+    {
+        "name": "SETI",
+        "year": "2016",
+        "cover": "seti.png",
+        "byline": "Signal processing research on the Allen Telescope Array",
+        "link": "http://blog.ibmjstart.net/2016/06/29/ibm-stanford-university-team-new-perspective-seti-signal-analytics/",
+        "categories": ["research", "code"]
+    },
+    {
+        "name": "Lemnos",
+        "year": "2016",
+        "cover": "lemnos.png",
+        "byline": "Stanford d.school project reimagining the graveyard",
+        "link": "https://vimeo.com/166781120",
+        "categories": ["design"]
+    },
+    {
+        "name": "AM | PM",
+        "year": "2016",
+        "cover": "ampm.png",
+        "byline": "A short film about the life of a painter",
+        "link": "https://www.imdb.com/title/tt5510850/?ref_=nm_knf_t1",
+        "categories": ["film"]
+    },
+    {
+        "name": "myanmar, monochrome",
+        "year": "2016",
+        "cover": "photography/myanmar.png",
+        "byline": "nikon d90",
+        "link": "gallery/myanmar",
+        "categories": ["photography"]
+    },
+    {
+        "name": "NIH / NINDS",
+        "year": "2013 - 2015",
+        "cover": "nih.png",
+        "byline": "biophysics research into the postsynaptic density",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4687590/figure/fig04/",
+        "categories": ["research"]
+    },
+    {
+        "name": "How to Fly Around the World for Free",
+        "year": "2015",
+        "cover": "travelhacking.png",
+        "byline": "2015 talk on travel hacking",
+        "link": "https://www.youtube.com/watch?v=Vx1REz9RVYc",
+        "categories": ["travel", "talk"]
+    },
+    {
+        "name": "NASA JPL / Deep Space Network",
+        "year": "2014",
+        "cover": "jpl.png",
+        "byline": "Processing satellite downlink data at gigabit scale rates",
+        "link": "",
+        "categories": ["research", "code"]
+    },
+    {
+        "name": "Burning Man 2013",
+        "year": "2013",
+        "cover": "burningman2013.png",
+        "byline": "Documentation of a city in the dust",
+        "link": "https://vimeo.com/76244537",
+        "categories": ["film"]
+    }
+]

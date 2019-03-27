@@ -1,33 +1,208 @@
-.App {
+@import url("https://rsms.me/inter/inter.css");
+html, body {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+
+@supports (font-variation-settings: normal) {
+  html, body {
+    font-family: "Inter var", sans-serif;
+  }
+}
+p {
+  font-family: "Inter var", sans-serif;
+  font-size: 16px;
+  color: #000000;
+  margin: 0;
+}
+
+.titleText {
+  font-family: "Inter var", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #000000;
+  margin: 0;
+}
+
+.normalText {
+  font-family: "Inter var", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #000000;
+  margin: 0;
+  opacity: 0.8;
+}
+
+.lightText {
+  font-family: "Inter var", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: #000000;
+  margin: 0;
+  opacity: 0.33;
+}
+
+a {
+  text-decoration: underline;
+}
+
+.filterText {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.filterNormal {
+  transition: 0.1s all;
+}
+
+.filterNormal:hover {
+  text-decoration: underline;
+}
+
+.filterSelected {
+  text-decoration: underline;
+  transition: 0.1s all;
+}
+
+.filterSelected:hover {
+  text-decoration: none;
+}
+
+.titleBar {
+  width: calc(100% - 64px);
+  padding: 32px;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 480px) {
+  .titleBar {
+    width: calc(100% - 32px);
+    padding: 16px;
+  }
+}
+.flow {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin-top: 120px;
+}
+
+.flowItemContainer {
+  width: calc((100% - 128px) / 3);
+}
+
+.flowItemA {
+  width: 100%;
+  height: 0;
+  padding-bottom: 42.8%;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.flowItem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.flowImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.flowItemOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 64px);
+  height: calc(100% - 64px);
+  background: white;
+  opacity: 0;
+  padding: 32px;
+  transition: 0.1s all;
+}
+
+.flowItemContainer:hover .flowItemOverlay {
+  opacity: 0.9;
+}
+
+@media only screen and (max-width: 480px) {
+  .flowItemContainer {
+    width: calc(100% - 32px);
+  }
+
+  .flowItemA {
+    margin-bottom: 16px;
+  }
+
+  .filterMenu {
+    display: none;
+  }
+}
+.dynamicTitleText {
+  font-family: "Inter var", sans-serif;
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: 500;
+  color: #000000;
+  margin: 0;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.dynamicCaptionText {
+  font-family: "Inter var", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #000000;
+  margin: 0;
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.dynamicImageFull {
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.dynamicImageGallery {
+  width: 64rem;
+  margin-left: -12rem;
+  margin-right: -12rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.dynamicVideo {
+  width: 100%;
+}
+
+.dynamicPage {
+  margin-top: 120px;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 160px;
+}
+
+@media only screen and (max-width: 480px) {
+  .dynamicPage {
+    margin-top: 120px;
+    width: calc(100% - 32px);
   }
-  to {
-    transform: rotate(360deg);
+
+  .dynamicImageGallery {
+    width: calc(100% + 32px);
+    margin-left: -16px;
+    margin-right: -16px;
   }
 }
+
+/*# sourceMappingURL=App.css.map */
