@@ -29,7 +29,7 @@
         "year": "2019",
         "cover": "duet.png",
         "byline": "GPT-2 for writer's block",
-        "link": "https://duet.archive.house",
+        "link": "https://duet.li",
         "categories": ["design", "code"]
     },
     {
@@ -39,6 +39,14 @@
         "byline": "tokyo / a7rii",
         "link": "./gallery/ukiyo",
         "categories": ["photography"]
+    },
+    {
+        "name": "caffinity",
+        "year": "2018",
+        "cover": "caffinity.png",
+        "byline": "Cafe directory for work",
+        "link": "https://caffinity.co",
+        "categories": ["design", "code"]
     },
     {
         "name": "Remy",
@@ -64,14 +72,6 @@
         "byline": "tokyo / a7rii",
         "link": "gallery/andata",
         "categories": ["photography"]
-    },
-    {
-        "name": "caffinity",
-        "year": "2018",
-        "cover": "caffinity.png",
-        "byline": "Cafe directory for work",
-        "link": "https://caffinity.co",
-        "categories": ["design", "code"]
     },
     {
         "name": "organica",

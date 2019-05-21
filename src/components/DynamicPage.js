@@ -33,8 +33,12 @@ class DynamicPage extends Component {
                 return <p key={key} className="dynamicTitleText">{item.content}</p>
             case 'spacing':
                 return <div key={key} style={{height: 64}} />
+            case 'spacingLarge':
+                    return <div key={key} style={{height: 192}} />
             case 'imageFull':
                 return <img key={key} src={this.state.prefix + `pages/${this.props.page}/${item.content}`} alt="" className="dynamicImageFull"/>
+            case 'imageWide':
+                return <img key={key} src={this.state.prefix + `pages/${this.props.page}/${item.content}`} alt="" className="dynamicImageGallery"/>
             case 'imageGallery':
                 return (
                     item.content.map(image => {
@@ -47,11 +51,42 @@ class DynamicPage extends Component {
                     })
                 )
             case 'text':
-                return <p key={key} className="normalText">{item.content}</p>
+                return <p key={key} className="normalText" style={item.bold ? {fontWeight: 600, marginBottom: 8} : {marginBottom: 8}}>{item.content}</p>
+            case 'listNum':
+                return (
+                    <ol className="normalText">
+                        {item.content.map(line => {
+                            return <li key={key+Math.random()} style={{marginBottom: 8}}>{line}</li>
+                        })}
+                    </ol>
+                )
+            case 'listBullet':
+                return (
+                    <ul className="normalText">
+                        {item.content.map(line => {
+                            return <li key={key+Math.random()} style={{marginBottom: 8}}>{line}</li>
+                        })}
+                    </ul>
+                )
+            case 'heading':
+                return <p key={key} className="dynamicHeadingText">{item.content}</p>
             case 'caption':
                 return <p key={key} className="dynamicCaptionText">{item.content}</p>
             case 'video':
                 return <video key={key} controls="controls" class='dynamicVideo' name={item.content} src={this.state.prefix + `pages/${this.props.page}/${item.content}`} />
+            case 'caseProblemOutcome':
+                return (
+                    <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
+                        <div style={{width: '45%'}}>
+                            <p className="dynamicHeadingText">Problem</p>
+                            <p key={key} className="normalText" style={item.bold ? {fontWeight: 600, marginBottom: 8} : {marginBottom: 8}}>{item.content[0]}</p>
+                        </div>
+                        <div style={{width: '45%'}}>
+                            <p className="dynamicHeadingText">Outcome</p>
+                            <p key={key} className="normalText" style={item.bold ? {fontWeight: 600, marginBottom: 8} : {marginBottom: 8}}>{item.content[1]}</p>
+                        </div>
+                    </div>
+                )
             default:
                 return <p key={key}/>;
         }

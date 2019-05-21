@@ -8,6 +8,17 @@
     text-align: center;
 }
 
+.dynamicHeadingText {
+    font-family: $fontStack;
+    font-size: $dynamicHeadingTextSize;
+    line-height: $dynamicHeadingLineHeight;
+    font-weight: $heavyFontWeight;
+    color: $primaryColor;
+    margin: 0;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
 .dynamicCaptionText {
     font-family: $fontStack;
     font-size: $normalTextSize;
@@ -32,7 +43,6 @@
 
 .dynamicVideo{
     width: 100%;
-
 }
 
 .dynamicPage {

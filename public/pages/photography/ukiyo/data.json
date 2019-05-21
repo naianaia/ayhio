@@ -12,6 +12,30 @@
         "content": null
     },
     {
+        "type": "text",
+        "content": "My strongest memory from the first time I stepped into Tokyo was the feeling of being struck by the sheer scale and density of the place. That feeling never left me, and I became fascinated with understanding it. I visited time and time again to immerse myself in the intricate balance between order and chaos that felt so unique to the place."
+    },
+    {
+        "type": "spacing",
+        "content": null
+    },
+    {
+        "type": "text",
+        "content": "It’s difficult to really understand a place that’s so immersive with so many layers. I realized that to even attempt to understand a place like Tokyo, I needed to explore its fringes – experiences far removed from the tourist circuit. This sparked a long series of explorations of the city: of its back alleys, its far reaches, and its curiosities. It wasn’t until my seventh of eighth time back, when my explorations led me upwards, that I found some of what I had been looking for. On the rooftops of Tokyo I witnessed a canopy unfold like no city I’d ever visited — an infinite three-dimensional landscape that resembled more closely a rainforest than anything remotely human."
+    },
+    {
+        "type": "spacing",
+        "content": null
+    },
+    {
+        "type": "text",
+        "content": "'ukiyo vertigo' is a result of these explorations. Ukiyo refers to the 'floating world' era of Japanese thought, and the Ukiyo-e art style that accompanied it. The illusory, removed, and profoundly temporary nature of the transitory world that it examined resonated with me in those long, endless nights above the city."
+    },
+    {
+        "type": "spacing",
+        "content": null
+    },
+    {
         "type": "imageGallery",
         "content": [
             "1.jpg", 
@@ -20,10 +44,22 @@
             "4.jpg", 
             "5.jpg", 
             "6.jpg", 
-            "6.jpg", 
             "7.jpg", 
             "8.jpg", 
-            "9.jpg"
+            "9.jpg",
+            "10.jpg",
+            "11.jpg", 
+            "12.jpg", 
+            "13.jpg", 
+            "14.jpg", 
+            "15.jpg", 
+            "16.jpg", 
+            "17.jpg", 
+            "18.jpg", 
+            "19.jpg",
+            "20.jpg",
+            "21.jpg", 
+            "22.jpg"
         ]
     }
 ]

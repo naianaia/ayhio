@@ -1,0 +1,214 @@
+[
+    {
+        "type": "title",
+        "content": "Caffinity"
+    },
+    {
+        "type": "caption",
+        "content": "Cafe directory for work"
+    },
+    {
+        "type": "spacing",
+        "content": null
+    },
+    {
+        "type": "imageWide",
+        "content": "caffinityScreenshot.png"
+    },
+    {
+        "type": "spacingLarge",
+        "content": null
+    },
+    {
+        "type": "caseProblemOutcome",
+        "content": [
+            "Cafes are popular makeshift offices among knowledge workers, but it’s hard to find ones that have necessary amenities. ",
+            "I built a distraction-free web app displaying only the attributes that matter, reducing the search and navigate process to a single click."
+        ]
+    },
+    {
+        "type": "spacingLarge",
+        "content": null
+    },
+    {
+        "type": "heading",
+        "content": "Discovery"
+    },
+    {
+        "type": "text",
+        "content": "How might we make it easier to find cafes to work from?",
+        "bold": true
+    },
+    {
+        "type": "text",
+        "content": "This was a problem that many of my friends complain about on a daily basis - how is it that finding a cafe that's good for work is so hard? By speaking to people who worked frequently (>2x/week) from cafes, I uncovered a general process and a number of insights."
+    },
+    {
+        "type": "listNum",
+        "content": [
+            "Search for 'cafes with wifi'", 
+            "Click on Yelp, Google Maps, or Foursquare pages of cafes nearby", 
+            "Ctrl+F 'Wifi' and then 'Plugs' or 'Outlets'",
+            "Copy the address into Google Maps",
+            "Navigate"
+        ]
+    },
+    {
+        "type": "spacing"
+    },
+    {
+        "type": "text",
+        "content": "In addition, I learned a few things about this process, and the reasons that current platforms were not suited to this process:"
+    },
+    {
+        "type": "listBullet",
+        "content": [
+            "Above all else, one thing mattered most: speed. Target users highly valued productivity, and wanted something they could use at-a-glance. They really felt the pain that an extra 1-2 minutes of searching brought.", 
+            "The friction involved in finding good work cafes prevents people from exploring more. As one user put it, 'I love exploring new places, but it's hard to find new places that are good for working, so I stick to the ones I know.' ", 
+            "Though platforms exist dedicated to work, their low signal-to-noise and bloated interfaces drove people to more general platforms like yelp and foursquare. "
+        ]
+    },
+    {
+        "type": "spacingLarge"
+    },
+    {
+        "type": "heading",
+        "content": "Background"
+    },
+    {
+        "type": "text",
+        "content": "This problem has been explored many times before - as evidenced by a search on ProductHunt - but nothing seems to have stuck. I studied existing products to learn from their mistakes. A few common mistakes emerged:"
+    },
+    {
+        "type": "spacing"
+    },
+    {
+        "type": "imageFull",
+        "content": "example1.png"
+    },
+    {
+        "type": "caption",
+        "content": "Too much data - Too many pieces of dense information increases decision friction."
+    },
+    {
+        "type": "spacing"
+    },
+    {
+        "type": "imageFull",
+        "content": "example2.png"
+    },
+    {
+        "type": "caption",
+        "content": "Low Signal-Noise Ratio - Inefficient use of space and subjective text make it hard to find important information."
+    },
+    {
+        "type": "spacing"
+    },
+    {
+        "type": "imageFull",
+        "content": "example3.png"
+    },
+    {
+        "type": "caption",
+        "content": "Confusing Information Hierarchy - Distracting and important elements displayed together, making it confusing to make decisions."
+    },
+    {
+        "type": "spacing"
+    },
+    {
+        "type": "imageFull",
+        "content": "example4.png"
+    },
+    {
+        "type": "caption",
+        "content": "Not enough information - Basically a less usable google maps search."
+    },
+    {
+        "type": "spacingLarge"
+    },
+    {
+        "type": "heading",
+        "content": "Prototyping"
+    },
+    {
+        "type": "text",
+        "content": "Because my target userbase was productivity focused and thus valued their time highly, I decided that the most important goal was to optimize for fast decision making. A key design challenge was to convey necessary information and location awareness as simply as possible. A secondary goal was to minimize data entry friction. "
+    },
+    {
+        "type": "text",
+        "content": "I proceeded to develop an information hierarchy. I listed a number of attributes that people had mentioned during ethnographies, and tried to rank them in relative order:"
+    },
+    {
+        "type": "listNum",
+        "content": [
+            "Distance - Needed to be close", 
+            "Wifi - Some mentioned speed, some didn't care", 
+            "Power - Most people wanted outlets and mentioned that this was the hardest thing to find",
+            "Food - Not just snacks, but actual meals",
+            "Third Wave - Some people cared about coffee quality",
+            "Vibe - Some people liked modern cafes",
+            "Loft - Some people enjoyed more open spaces"
+        ]
+    },
+    {
+        "type": "spacing"
+    },
+    {
+        "type": "text",
+        "content": "I separated this list into two categories: Essential (1, 2, 3, 4) and Non-Essential (5, 6, 7)."
+    },
+    {
+        "type": "spacingLarge"
+    },
+    {
+        "type": "heading",
+        "content": "Testing"
+    },
+    {
+        "type": "text",
+        "content": "I watched users interact with my prototype, and solicited feedback. From this, I noticed a few important things:"
+    },
+    {
+        "type": "listBullet",
+        "content": [
+            "I had created sorting functions for distance, attributes level, and name, but almost everyone went straight for distance. ", 
+            "People had different opinions on the subjective attributes. For example, 'vibe' was not something that people agreed upon. Different levels of wifi (fast/slow), outlets (many/few), and food (good/normal) were confusing and distracting. ", 
+            "Not everyone wanted to start from their current location. For example, one user wanted to center the search around metro stations. "
+        ]
+    },
+    {
+        "type": "spacingLarge"
+    },
+    {
+        "type": "heading",
+        "content": "Outcome"
+    },
+    {
+        "type": "text",
+        "content": "From these insights, I made some changes to the final product:"
+    },
+    {
+        "type": "listNum",
+        "content": [
+            "I eliminated the various sorting functions and used distance as the default sort. ", 
+            "I eliminated all subjective attributes: loft, vibe, third wave, as well as levels of essential attributes (good/normal for wifi, many/some for outlets, etc). There was too much variance in the ways that people interpreted this information, and it served as a time-consuming distration in the decision making process. ", 
+            "I added the ability to set the center - because people would often search from a different location. ",
+            "The initial version was limited to cafes in San Francisco. I opened it up to accept arbitrary locations. To allow for this, I added a range option that defaulted to 3 miles because all users I observed wanted cafes within easy travel distance. To keep queries cheap, I constructed a lat/long square around each query location, and filtered to a circle in the front end. ",
+            "I took all options (location, range, attributes) and absorbed them into a single UI box. "
+        ]
+    },
+    {
+        "type": "spacing"
+    },
+    {
+        "type": "text",
+        "content": "In the final product, the entire flow of choosing the right work cafe is possible with one click. Check it out on caffinity.co!"
+    },
+    {
+        "type": "spacing"
+    },
+    {
+        "type": "imageWide",
+        "content": "caffinityScreenshot.png"
+    }
+]
