@@ -1,0 +1,302 @@
+[
+    {
+        "type": "title",
+        "content": "Planetarium"
+    },
+    {
+        "type": "caption",
+        "content": "AI image analysis tools for enterprise R&D"
+    },
+    {
+        "type": "spacing",
+        "content": null
+    },
+    {
+        "type": "imageWide",
+        "content": "screenshot.png"
+    },
+    {
+        "type": "spacingLarge",
+        "content": null
+    },
+    {
+        "type": "caseProblemOutcome",
+        "content": [
+            "R&D data science teams can build models, but deployment is inconsistent and usability is an issue for engineers outside the team. ",
+            "TBD"
+        ]
+    },
+    {
+        "type": "spacingLarge",
+        "content": null
+    },
+    {
+        "type": "heading",
+        "content": "Discovery"
+    },
+    {
+        "type": "text",
+        "content": "Key Themes",
+        "bold": true
+    },
+    {
+        "type": "text",
+        "content": "Data Scientists are expensive. Their capacity is valuable. Any improvements to their workflow has exponential ROI across organizations, because they can not only do their work faster, but work on more projects"
+    },
+    {
+        "type": "text",
+        "content": "Engineer time is often used inefficiently. Any improvement to their process has linear ROI, but the initial scale of the problem is very large. "
+    },
+    {
+        "type": "spacing"
+    },
+    {
+        "type": "text",
+        "content": "Two-Sided Problem",
+        "bold": true
+    },
+    {
+        "type": "text",
+        "content": "I began research by talking to users and uncovering existing pain points. There were two functional user classes - Data Science users and End users. We studied each of these to understand their process, perspective, and priors. "
+    },
+    {
+        "type": "spacing"
+    },
+    {
+        "type": "text",
+        "content": "Data Science Users",
+        "bold": true
+    },
+    {
+        "type": "text",
+        "content": "These were programmers who build and train models. They mostly had experience with python, but had little experience with devops practices and deployment. An outline of general process: "
+    },
+    {
+        "type": "listNum",
+        "content": [
+            "Annotate images to train on", 
+            "Write and train model", 
+            "Create a GUI for each model to accept parameters", 
+            "Collect a list of dependencies and libraries",
+            "Compile GUI and model as executable",
+            "Notify users that an update has occured",
+            "Ensure that users have set up the environment correctly",
+            "Send out updates async"
+        ]
+    },
+    {
+        "type": "text",
+        "content": "Pain points began to emerge:"
+    },
+    {
+        "type": "listBullet",
+        "content": [
+            "When tools were deployed, the data science team had to ensure that all users update their environments with the lastest libraries, and download the new executables. This is a multi-step, high-friction process that many users end up avoiding. ", 
+            "Running and deploying locally makes it difficult to capture data in a scalable, reliable way", 
+            "Because they were running locally, End Users could not take advantage of GPU acceleration during inference."
+        ]
+    },
+    {
+        "type": "text",
+        "content": "These pain points were primarily process-oriented, so we classified this as an engineering problem, and began work on a backend system that would automate the process.",
+        "bold": true
+    },
+    {
+        "type": "spacing"
+    },
+    {
+        "type": "text",
+        "content": "End Users",
+        "bold": true
+    },
+    {
+        "type": "text",
+        "content": "End users interact with the models that the data science users create. They came from a range of backgrounds and disciplines, but the one thing they had in common was that they did not have deep coding knowledge or expertise. They often spend the majority of their time in their day-to-day interacting with the models produced by Data Science Users."
+    },
+    {
+        "type": "text",
+        "content": "I assessed the current tools that they were using and produced the following insights"
+    },
+    {
+        "type": "listBullet",
+        "content": [
+            "The interface was not standard across models, cluttered, and full of different mixed controls, which added friction to interactions. ", 
+            "The unwieldy and unintuitive interface affected the entire workflow - new engineers had to be onboarded over weeks. Additionally, this caused resistance any time an update was rolled out, because they knew that the extra action of manually updating would mean that they had to learn a new interface. ", 
+            "Engineers struggled with annotation, because they could not keep track of their changes. However, annotation was crucial because the models that were created by data science users were not 100% correct. Making this fricitonless would increase the accuracy of models over time, so this was a high ROI problem to solve. "
+        ]
+    },
+    {
+        "type": "text",
+        "content": "These pain points were primarily product-oriented, so we classified this as a design problem and began to work on a front-end annotation toolkit to address them. ",
+        "bold":true
+    },
+    {
+        "type": "spacingLarge",
+        "content": null
+    },
+    {
+        "type": "heading",
+        "content": "User Flow"
+    },
+    {
+        "type": "imageFull",
+        "content": "pln_flow1.png"
+    },
+    {
+        "type": "spacing"
+    },
+    {
+        "type": "text",
+        "content": "Next, I worked with users to understand their flow and craft a journey that would work for everyone. This map would serve as a reference, both internally and externally, as well as a framework from which we would design the backend system.   "
+    },
+    {
+        "type": "spacing"
+    },
+    {
+        "type": "imageWide",
+        "content": "pln_flow2.png"
+    },
+    {
+        "type": "spacing"
+    },
+    {
+        "type": "text",
+        "content": "A key insight emerged: all of the deployment steps except for the training were standard - thus we could automate almost the entire deployment flow, freeing up data science bandwidth. Additionally, with the flexibility that we were building into the front-end, we could address training annotation as another algorithm and offload those tasks to End Users, further freeing up Data Science capacity."
+    },
+    {
+        "type": "spacingLarge",
+        "content": null
+    },
+    {
+        "type": "heading",
+        "content": "Prioritization"
+    },
+    {
+        "type": "text",
+        "content": "The next step was to enumerate all features and prioritize them. To do this, I quantified the amount of time that the users spent in each step, and set success targets for each one. I then prioritized each stage based on impact on overall workflow. It became clear that reducing interaction time on the End User side would be as important to freeing up Data Science capacity."
+    },
+    {
+        "type": "spacing"
+    },
+    {
+        "type": "imageFull",
+        "content": "pln_priority.png"
+    },
+    {
+        "type": "spacing"
+    },
+    {
+        "type": "spacingLarge",
+        "content": null
+    },
+    {
+        "type": "heading",
+        "content": "Layout and Wireframes"
+    },
+    {
+        "type": "text",
+        "content": "To prototype the interface, I needed to understand the mental models and patterns that users were familiar with. During interviews, I realized that the vast majority of users spend a large amount of time commuting to work on a daily basis - it was not uncommon for them to spend two hours each way in traffic. This time was spent staring at the dashboards of their cars. "
+    },
+    {
+        "type": "spacing"
+    },
+    {
+        "type": "text",
+        "content": "Because of this, I decided to assess vehicle dashboards to explore how we could incorporate design elements to make the interface intuitive to our users:"
+    },
+    {
+        "type": "listBullet",
+        "content": [
+            "Dark interface to reduce eye strain", 
+            "Vivid colors and unique icons to communicate function and status", 
+            "Intentional clusters of controls aid in intuitive operation",
+            "Use of space to provide visual distance between areas of different function"
+        ]
+    },
+    {
+        "type": "spacing"
+    },
+    {
+        "type": "imageFull",
+        "content": "car1.png"
+    },
+    {
+        "type": "imageFull",
+        "content": "car2.png"
+    },
+    {
+        "type": "spacing"
+    },
+    {
+        "type": "text",
+        "content": "The cluttered interface of current tools caused significant pain. We worked to simplify usage and reduce cognitive load by only showing the controls that matter. This resulted in a series of progressively revealing panes. Progressive display served as a way to reduce learning curve as well. "
+    },
+    {
+        "type": "spacing"
+    },
+    {
+        "type": "imageFull",
+        "content": "pln_layout.png"
+    },
+    {
+        "type": "spacing"
+    },
+    {
+        "type": "text",
+        "content": "The final prototypes were especially well recieved - the End Users were very happy with how the use of responsivity, color, and space made it really easy to navigate the complexities of their tasks."
+    },
+    {
+        "type": "spacingLarge",
+        "content": null
+    },
+    {
+        "type": "heading",
+        "content": "Brand"
+    },
+    {
+        "type": "text",
+        "content": "We wanted an evocative brand that appealed to the complexity that engineers were used to seeing, the exploratory nature of R&D, and the aspirational goals of science. We settled on Planetarium, because we saw parallels in the traditions of stargazing and identifying patterns in constellations with the work that Machine Learning engineers do. "
+    },
+    {
+        "type": "spacing"
+    },
+    {
+        "type": "imageFull",
+        "content": "planetarium.png"
+    },
+    {
+        "type": "spacingLarge",
+        "content": null
+    },
+    {
+        "type": "heading",
+        "content": "Testing"
+    },
+    {
+        "type": "text",
+        "content": "It was important for us to get feedback on our design decisions, so I presented them to both seasoned data scientists and novice engineers. Their feedback confirmed that a lot of our decisions. The visual elements, style, and grouping were especially well recieved. "
+    },
+    {
+        "type": "spacingLarge",
+        "content": null
+    },
+    {
+        "type": "heading",
+        "content": "Outcome"
+    },
+    {
+        "type": "text",
+        "content": "TBD"
+    },
+    {
+        "type": "spacing",
+        "content": null
+    },
+    {
+        "type": "imageWide",
+        "content": "screenshot.png"
+    },
+    {
+        "type": "spacing"
+    }
+]
