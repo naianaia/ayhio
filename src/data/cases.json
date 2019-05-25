@@ -1,0 +1,35 @@
+
+[
+    {
+        "name": "Planetarium",
+        "year": "2019",
+        "cover": "planetarium.png",
+        "description": "A private, scalable AI image analysis platform for enterprise R&D teams.",
+        "link": "https://ayh.io/planetarium",
+        "categories": ["product","design", "code"]
+    },
+    {
+        "name": "Caffinity",
+        "year": "2019",
+        "cover": "caffinity.png",
+        "description": "A distraction-free web app to aggregate and display work cafe information.",
+        "link": "https://ayh.io/caffinity",
+        "categories": ["design", "code"]
+    },
+    {
+        "name": "Mavencook",
+        "year": "2017 - 2018",
+        "cover": "mavencook.png",
+        "description": "A mobile videochat app for food industry content creators to monetize their talent.",
+        "link": "https://ayh.io/mavencook",
+        "categories": ["product","design"]
+    },
+    {
+        "name": "Horizons",
+        "year": "2018",
+        "cover": "horizons.png",
+        "description": "A fictional app for independent travel planning.",
+        "link": "https://ayh.io/horizons",
+        "categories": ["design", "code"]
+    }
+]

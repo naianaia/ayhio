@@ -11,6 +11,7 @@ import Flow from './components/Flow';
 import logo from './logo.svg';
 import './App.css';
 import DynamicPage from './components/DynamicPage';
+import CaseStudies from './components/CaseStudies';
 
 function initializeReactGA() {
     ReactGA.initialize('UA-137107594-1');
@@ -47,25 +48,28 @@ class App extends Component {
             <div>
                 <Provider store={store}>
                     <div style={{width: '100%', position: 'relative'}}>
-
                         <Router>
+                            <Route exact path="/portfolio" render={(props)=>{
+                                return <TitleBar showFilter={false} showCases={true}/>
+                            }} />
                             <Route path="/:page" render={(props)=>{
                                 return <TitleBar showFilter={false}/>
                             }}/>
                             <Route exact path="/" render={(props)=>{
                                 return <TitleBar showFilter={true}/>
                             }}/>
+                            
                         </Router>
                         <Router>
                             <Route exact path="/gallery/:page" render={(props)=>{
                                 return <DynamicPage gallery={true} page={"photography/" + props.match.params.page}/>
                             }}/>
+                            <Route exact path="/portfolio" component={CaseStudies} />
                             <Route exact path="/:page" render={(props)=>{
                                 return <DynamicPage page={props.match.params.page}/>
                             }}/>
                             <Route exact path="/" component={Flow} />
                         </Router>
-                        
                     </div>
                 </Provider>
             </div>

@@ -5,7 +5,6 @@ import { connect } from 'react-redux'
 
 import '../App.css';
 
-import flowData from '../data/flow.json'
 import FlowItem from './FlowItem';
 
 class Flow extends Component {

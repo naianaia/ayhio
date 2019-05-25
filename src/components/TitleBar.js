@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import * as actions from '../actions';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import '../App.css';
 import Selection from './Selection'
@@ -15,6 +16,9 @@ class TitleBar extends Component {
                     <p className="titleText">
                         <a style={{textDecoration: 'none'}} className="titleText filterText" href="http://ayh.io">austin y hou</a> /
                     </p>
+                    {this.props.showCases &&
+                        <p className="titleText">case studies</p>
+                    }
                     {this.props.showFilter && 
                         <p className="titleText">
                             <Selection filters={["design"]} text="designer" />
@@ -22,6 +26,8 @@ class TitleBar extends Component {
                             <Selection filters={["code"]} text="engineer" />
                             &nbsp;+&nbsp;
                             <Selection filters={["art", "photography"]} text="artist" />
+                            <div style={{textDecoration: 'none', display: 'none'}}>&nbsp;/&nbsp;
+                            <a className="titleText filterText" href="portfolio">case studies ></a></div>
                         </p>
                     }
                 </div>

@@ -23,7 +23,22 @@
         "type": "caseProblemOutcome",
         "content": [
             "R&D data science teams can build models, but deployment is inconsistent and usability is an issue for engineers outside the team. ",
-            "TBD"
+            "TODO"
+        ]
+    },
+    {
+        "type": "spacing"
+    },
+    {
+        "type": "heading",
+        "content": "Role"
+    },
+    {
+        "type": "listBullet",
+        "content": [
+            "Led design and product vision", 
+            "Built front-end in React and Redux", 
+            "Led sales"
         ]
     },
     {
@@ -91,14 +106,17 @@
     {
         "type": "listBullet",
         "content": [
-            "When tools were deployed, the data science team had to ensure that all users update their environments with the lastest libraries, and download the new executables. This is a multi-step, high-friction process that many users end up avoiding. ", 
-            "Running and deploying locally makes it difficult to capture data in a scalable, reliable way", 
-            "Because they were running locally, End Users could not take advantage of GPU acceleration during inference."
+            "When tools were deployed, the data science team had to ensure that all users update their environments with the lastest libraries, and download the new executables. This is a multi-step, high-friction process that many users end up avoiding. This process of update propagation took weeks.", 
+            "Running and deploying locally mades it difficult to capture data in a scalable, reliable way", 
+            "UI creation was a process that was custom each time, that consumed valuable human resources."
         ]
     },
     {
+        "type": "spacing"
+    },
+    {
         "type": "text",
-        "content": "These pain points were primarily process-oriented, so we classified this as an engineering problem, and began work on a backend system that would automate the process.",
+        "content": "These pain points were primarily process-oriented, so we classified this as an engineering problem, and began work on a backend system that would address these pain points.",
         "bold": true
     },
     {
@@ -115,15 +133,32 @@
     },
     {
         "type": "text",
-        "content": "I assessed the current tools that they were using and produced the following insights"
+        "content": "I assessed the current tools that they were using and produced the following insights:"
+    },
+    {
+        "type": "spacing"
+    },
+    {
+        "type": "imageFull",
+        "content": "sampleQT.png"
+    },
+    {
+        "type": "caption",
+        "content": "Example of interface built with similar libraries to the ones our users had been using. Actual tool under NDA."
+    },
+    {
+        "type": "spacing"
     },
     {
         "type": "listBullet",
         "content": [
-            "The interface was not standard across models, cluttered, and full of different mixed controls, which added friction to interactions. ", 
-            "The unwieldy and unintuitive interface affected the entire workflow - new engineers had to be onboarded over weeks. Additionally, this caused resistance any time an update was rolled out, because they knew that the extra action of manually updating would mean that they had to learn a new interface. ", 
-            "Engineers struggled with annotation, because they could not keep track of their changes. However, annotation was crucial because the models that were created by data science users were not 100% correct. Making this fricitonless would increase the accuracy of models over time, so this was a high ROI problem to solve. "
+            "The interface was not standard across models, cluttered, and full of different mixed controls, which added friction to interactions. This friction manifested as time spent in use - each user was taking up to 10 minutes per image.", 
+            "The lack of information architecture in interface design affected the entire workflow - new engineers had to be onboarded over weeks. Additionally, this caused resistance any time an update was rolled out, because they knew that the extra action of manually updating would mean that they had to learn a new interface. ", 
+            "Engineers struggled with annotation, because making changes was slow and disorganized. Additionally, they couldn't keep track of their changes. Annotation was crucial because the models that were created by data science users were not 100% correct, and any changes would increase their accuracy over time."
         ]
+    },
+    {
+        "type": "spacing"
     },
     {
         "type": "text",
@@ -157,13 +192,6 @@
         "content": "pln_flow2.png"
     },
     {
-        "type": "spacing"
-    },
-    {
-        "type": "text",
-        "content": "A key insight emerged: all of the deployment steps except for the training were standard - thus we could automate almost the entire deployment flow, freeing up data science bandwidth. Additionally, with the flexibility that we were building into the front-end, we could address training annotation as another algorithm and offload those tasks to End Users, further freeing up Data Science capacity."
-    },
-    {
         "type": "spacingLarge",
         "content": null
     },
@@ -173,7 +201,7 @@
     },
     {
         "type": "text",
-        "content": "The next step was to enumerate all features and prioritize them. To do this, I quantified the amount of time that the users spent in each step, and set success targets for each one. I then prioritized each stage based on impact on overall workflow. It became clear that reducing interaction time on the End User side would be as important to freeing up Data Science capacity."
+        "content": "The next step was to enumerate all features and prioritize them. The metric we chose was impact, and we decided measure imact by time. To do this, I quantified the amount of time that the users spent in each step, and set success targets for each one. I then prioritized each stage based on impact on overall workflow. Due to the relative scale of our two user populations, it became clear that reducing interaction time on the End User side would be as important to freeing up Data Science capacity."
     },
     {
         "type": "spacing"
@@ -186,6 +214,15 @@
         "type": "spacing"
     },
     {
+        "type": "text",
+        "content": "A key piece:",
+        "bold":true
+    },
+    {
+        "type": "text",
+        "content": "All deployment steps except for annotation and training were standard - thus we could automate almost the entire deployment flow with our backend, freeing up Data Science User bandwidth. Additionally, with the flexibility that we were building into the front-end, we could treat training annotation as another algorithm and offload those tasks to End Users, further freeing up Data Science capacity to focus on training."
+    },
+    {
         "type": "spacingLarge",
         "content": null
     },
@@ -195,22 +232,37 @@
     },
     {
         "type": "text",
-        "content": "To prototype the interface, I needed to understand the mental models and patterns that users were familiar with. During interviews, I realized that the vast majority of users spend a large amount of time commuting to work on a daily basis - it was not uncommon for them to spend two hours each way in traffic. This time was spent staring at the dashboards of their cars. "
+        "content": "We decided to acknowledge a few key guidelines before moving forward with design:"
+    },
+    {
+        "type": "listBullet",
+        "content": [
+            "Minimize time: We wanted to minimize the total amount of time that users spent interacting with our system.", 
+            "Minimize cognitive load: We wanted every action taken by users to be meaningful, logical, and most importantly, seamless.", 
+            "Build flexibly: We wanted our design system and our code to be as flexible as possible, ackowledging that products are living and not static. We wanted future additions and extensions to be as easy as possible. "
+        ]
     },
     {
         "type": "spacing"
     },
     {
         "type": "text",
-        "content": "Because of this, I decided to assess vehicle dashboards to explore how we could incorporate design elements to make the interface intuitive to our users:"
+        "content": "To minimize cognitive load, I needed to understand the mental models and patterns that users were familiar with. During interviews, I realized that the vast majority of users spend a large amount of time commuting to work on a daily basis - it was not uncommon for them to spend two hours each way in traffic. This time was spent staring at the dashboards of their cars. "
+    },
+    {
+        "type": "spacing"
+    },
+    {
+        "type": "text",
+        "content": "Because of this, I decided to assess vehicle dashboards to explore how we could incorporate design principles to make the interface intuitive to our users:"
     },
     {
         "type": "listBullet",
         "content": [
             "Dark interface to reduce eye strain", 
-            "Vivid colors and unique icons to communicate function and status", 
-            "Intentional clusters of controls aid in intuitive operation",
-            "Use of space to provide visual distance between areas of different function"
+            "Vividly recognizable colors and unique icons to communicate function and status", 
+            "Intentional clusters of controls aid in mental model formation",
+            "Use of visual distance between areas of different function"
         ]
     },
     {
@@ -229,7 +281,7 @@
     },
     {
         "type": "text",
-        "content": "The cluttered interface of current tools caused significant pain. We worked to simplify usage and reduce cognitive load by only showing the controls that matter. This resulted in a series of progressively revealing panes. Progressive display served as a way to reduce learning curve as well. "
+        "content": "Next, I addressed the cluttered interface of current tools that caused significant pain. We worked on modeling expectations at each step of flow to ensure that only information that was relevant was displayed. This resulted in a series of progressively revealed panes. Progressive display served as a way to reduce learning curve as well. "
     },
     {
         "type": "spacing"
@@ -243,7 +295,7 @@
     },
     {
         "type": "text",
-        "content": "The final prototypes were especially well recieved - the End Users were very happy with how the use of responsivity, color, and space made it really easy to navigate the complexities of their tasks."
+        "content": "The final prototypes were especially well recieved - users were very happy with how the use of responsivity, color, and space made it really easy to navigate the complexities of their tasks."
     },
     {
         "type": "spacingLarge",
@@ -286,7 +338,7 @@
     },
     {
         "type": "text",
-        "content": "TBD"
+        "content": "TODO"
     },
     {
         "type": "spacing",
