@@ -317,6 +317,13 @@
         "content": "planetarium.png"
     },
     {
+        "type": "spacing"
+    },
+    {
+        "type": "imageFull",
+        "content": "colors.png"
+    },
+    {
         "type": "spacingLarge",
         "content": null
     },

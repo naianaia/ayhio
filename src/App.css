@@ -55,6 +55,7 @@ a {
 
 .filterNormal {
   transition: 0.1s all;
+  text-decoration: none;
 }
 
 .filterNormal:hover {

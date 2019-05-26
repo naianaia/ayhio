@@ -9,6 +9,15 @@ import Selection from './Selection'
 const filters = ["art", "code", "design", "film", "photography", "product", "research", "travel"];
 
 class TitleBar extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            showFilters: false
+        }
+    }
+    toggleFilters() {
+        this.setState({ showFilters: !this.state.showFilters })
+    }
     render() {
         return (
             <div className="titleBar">
@@ -26,22 +35,30 @@ class TitleBar extends Component {
                             <Selection filters={["code"]} text="engineer" />
                             &nbsp;+&nbsp;
                             <Selection filters={["art", "photography"]} text="artist" />
-                            <div style={{textDecoration: 'none', display: 'none'}}>&nbsp;/&nbsp;
-                            <a className="titleText filterText" href="portfolio">case studies ></a></div>
                         </p>
                     }
                 </div>
                 {this.props.showFilter && 
                     <div className="filterMenu">
-                        <p className="titleText">all filters:</p>
-
-                        <p className="titleText">/&nbsp;
-                            {
-                                filters.map(filter => {
-                                    return (<span key={filter}><Selection filters={[filter]} text={filter} />&nbsp;/&nbsp;</span>)
-                                })
+                        <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'flex-end'}}>
+                            {false && 
+                                <p className="titleText">
+                                    <a className="filterText filterNormal" href="portfolio">view portfolio</a>&nbsp;/&nbsp;
+                                </p>
                             }
-                        </p>
+                            <p className="titleText filterText filterNormal" onClick={this.toggleFilters.bind(this)}>filter {
+                                this.state.showFilters ? <span style={{fontSize: 12}}>▲</span> : <span style={{fontSize: 12}}>▼</span>
+                            }</p>
+                        </div>
+                        {this.state.showFilters && 
+                            <p className="titleText">/&nbsp;
+                                { 
+                                    filters.map(filter => {
+                                        return (<span key={filter}><Selection filters={[filter]} text={filter} />&nbsp;/&nbsp;</span>)
+                                    })
+                                }
+                            </p>
+                        }
                     </div>
                 }
                 
