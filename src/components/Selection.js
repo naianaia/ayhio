@@ -21,7 +21,7 @@ class Selection extends Component {
                 } 
                 onClick={this.toggleFilter.bind(this)}
             >
-                {this.props.text}
+                {(this.props.selected === this.props.text) ? `${this.props.text}` : this.props.text}
             </span>
         );
     }

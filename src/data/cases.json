@@ -19,7 +19,7 @@
     {
         "name": "Mavencook",
         "year": "2017 - 2018",
-        "cover": "mavencook.png",
+        "cover": "portfolio/portMaven.png",
         "description": "A mobile videochat app for food industry content creators to monetize their talent.",
         "link": "https://ayh.io/mavencook",
         "categories": ["product","design"]
@@ -27,7 +27,7 @@
     {
         "name": "Horizons",
         "year": "2018",
-        "cover": "horizons.png",
+        "cover": "portfolio/portHorizon.png",
         "description": "A fictional app for independent travel planning.",
         "link": "https://ayh.io/horizons",
         "categories": ["design", "code"]
