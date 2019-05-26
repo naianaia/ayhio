@@ -7,7 +7,7 @@ import '../App.css';
 
 import FlowItem from './FlowItem';
 
-// add: - light bars - flock - stringtheory - 
+// add: - light bars 
 
 class Flow extends Component {
     render() {

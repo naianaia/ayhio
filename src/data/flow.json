@@ -33,20 +33,36 @@
         "categories": ["design", "code"]
     },
     {
+        "name": "caffinity",
+        "year": "2019",
+        "cover": "caffinity.png",
+        "byline": "Cafe directory for work",
+        "link": "https://caffinity.co",
+        "categories": ["product","design", "code"]
+    },
+    {
+        "name": "string theory [under construction]",
+        "year": "2019",
+        "cover": "stringtheory.png",
+        "byline": "Generative audiovisual line art",
+        "link": "",
+        "categories": ["art", "code"]
+    },
+    {
+        "name": "Flock [under construction]",
+        "year": "2019",
+        "cover": "flock.png",
+        "byline": "Interior awareness for scaling communities",
+        "link": "",
+        "categories": ["design", "code"]
+    },
+    {
         "name": "ukiyo vertigo",
         "year": "2018",
         "cover": "photography/ukiyo.png",
         "byline": "tokyo / a7rii",
         "link": "./gallery/ukiyo",
         "categories": ["photography"]
-    },
-    {
-        "name": "caffinity",
-        "year": "2018",
-        "cover": "caffinity.png",
-        "byline": "Cafe directory for work",
-        "link": "https://caffinity.co",
-        "categories": ["design", "code"]
     },
     {
         "name": "Remy",
