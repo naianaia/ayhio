@@ -143,6 +143,10 @@ a:hover {
   opacity: 0.9;
 }
 
+.flowMobile {
+  display: none;
+}
+
 @media only screen and (max-width: 480px) {
   .flowItemContainer {
     width: calc(100% - 32px);
@@ -154,6 +158,11 @@ a:hover {
 
   .filterMenu {
     display: none;
+  }
+
+  .flowMobile {
+    display: block;
+    margin-bottom: 32px;
   }
 }
 .dynamicTitleText {
