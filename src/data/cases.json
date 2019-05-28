@@ -17,6 +17,14 @@
         "categories": ["design", "code"]
     },
     {
+        "name": "Stanford Hospital",
+        "year": "2017",
+        "cover": "portfolio/portNeo.jpg",
+        "description": "Delivery room protocols to handle complex, life-threatening scenarios.",
+        "link": "https://ayh.io/neo",
+        "categories": ["product","design"]
+    },
+    {
         "name": "Mavencook",
         "year": "2017 - 2018",
         "cover": "portfolio/portMaven.png",

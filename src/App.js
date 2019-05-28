@@ -12,6 +12,7 @@ import logo from './logo.svg';
 import './App.css';
 import DynamicPage from './components/DynamicPage';
 import CaseStudies from './components/CaseStudies';
+import DynamicWidget from './components/DynamicWidget';
 
 function initializeReactGA() {
     ReactGA.initialize('UA-137107594-1');
@@ -53,7 +54,7 @@ class App extends Component {
                                 return <TitleBar showFilter={false} showCases={true}/>
                             }} />
                             <Route path="/:page" render={(props)=>{
-                                return <TitleBar showFilter={false}/>
+                                return <TitleBar showFilter={false} showTitle={true} page={props.match.params.page} />
                             }}/>
                             <Route exact path="/" render={(props)=>{
                                 return <TitleBar showFilter={true}/>
@@ -69,6 +70,11 @@ class App extends Component {
                                 return <DynamicPage page={props.match.params.page}/>
                             }}/>
                             <Route exact path="/" component={Flow} />
+                        </Router>
+                        <Router>
+                            <Route path="/:page" render={(props)=>{
+                                return <DynamicWidget page={props.match.params.page} />
+                            }}/>
                         </Router>
                     </div>
                 </Provider>

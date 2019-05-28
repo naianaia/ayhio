@@ -1,0 +1,22 @@
+[
+    {
+        "type": "title",
+        "content": "string theory"
+    },
+    {
+        "type": "caption",
+        "content": "Generative audiovisual line art"
+    },
+    {
+        "type": "spacing",
+        "content": null
+    },
+    {
+        "type": "imageFull",
+        "content": "stringtheory.png"
+    },
+    {
+        "type": "spacing",
+        "content": null
+    }
+]

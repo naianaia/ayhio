@@ -12,7 +12,23 @@ class TitleBar extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            showFilters: false
+            showFilters: false,
+            pageData: null,
+            pageTitle: null
+        }
+    }
+    componentWillMount() {
+        if (this.props.showTitle) {
+            var directory = `pages/${this.props.page}/data.json`;
+            var prefix = '../../'
+        
+            fetch(prefix + directory).then(response => {
+                return response.json();
+            }).then(data => {
+                this.setState({pageData: data, pageTitle: data && data[0].content})
+            }).catch(err => {
+                console.log("no page data.json");
+            });   
         }
     }
     toggleFilters() {
@@ -27,6 +43,9 @@ class TitleBar extends Component {
                     </p>
                     {this.props.showCases &&
                         <p className="titleText">case studies</p>
+                    }
+                    {this.props.showTitle && 
+                        <p className="titleText">{this.state.pageTitle}</p>
                     }
                     {this.props.showFilter && 
                         <p className="titleText">

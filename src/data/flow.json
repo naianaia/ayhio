@@ -41,12 +41,20 @@
         "categories": ["product","design", "code"]
     },
     {
-        "name": "string theory [under construction]",
+        "name": "string theory",
         "year": "2019",
         "cover": "stringtheory.png",
         "byline": "Generative audiovisual line art",
-        "link": "",
+        "link": "./stringtheory",
         "categories": ["art", "code"]
+    },
+    {
+        "name": "Albumlist [under construction]",
+        "year": "2019",
+        "cover": "albumlist.png",
+        "byline": "Digital album displaycase",
+        "link": "",
+        "categories": ["design", "code"]
     },
     {
         "name": "Flock [under construction]",

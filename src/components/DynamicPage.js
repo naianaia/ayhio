@@ -69,7 +69,7 @@ class DynamicPage extends Component {
                     </ul>
                 )
             case 'heading':
-                return <p key={key} className="dynamicHeadingText">{item.content}</p>
+                return <p key={key} id={item.content} className="dynamicHeadingText">{item.content}</p>
             case 'caption':
                 return <p key={key} className="dynamicCaptionText">{item.content}</p>
             case 'video':

@@ -1,7 +1,8 @@
 [
     {
         "type": "title",
-        "content": "Planetarium"
+        "content": "Planetarium",
+        "portfolio": true
     },
     {
         "type": "caption",
