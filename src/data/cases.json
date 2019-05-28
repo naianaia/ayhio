@@ -3,7 +3,7 @@
     {
         "name": "Planetarium",
         "year": "2019",
-        "cover": "planetarium.png",
+        "cover": "portfolio/portPlan.png",
         "description": "A private, scalable AI image analysis platform for enterprise R&D teams.",
         "link": "https://ayh.io/planetarium",
         "categories": ["product","design", "code"]
@@ -11,7 +11,7 @@
     {
         "name": "Caffinity",
         "year": "2019",
-        "cover": "caffinity.png",
+        "cover": "portfolio/portCaff.jpg",
         "description": "A distraction-free web app to aggregate and display work cafe information.",
         "link": "https://ayh.io/caffinity",
         "categories": ["design", "code"]

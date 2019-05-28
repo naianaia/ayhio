@@ -74,6 +74,19 @@ class DynamicPage extends Component {
                 return <p key={key} className="dynamicCaptionText">{item.content}</p>
             case 'video':
                 return <video key={key} controls="controls" class='dynamicVideo' name={item.content} src={this.state.prefix + `pages/${this.props.page}/${item.content}`} />
+            case 'caseProblemRole':
+                return (
+                    <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
+                        <div style={{width: '45%'}}>
+                            <p className="dynamicHeadingText">Problem</p>
+                            <p key={key} className="normalText" style={item.bold ? {fontWeight: 600, marginBottom: 8} : {marginBottom: 8}}>{item.content[0]}</p>
+                        </div>
+                        <div style={{width: '45%'}}>
+                            <p className="dynamicHeadingText">Role</p>
+                            <p key={key} className="normalText" style={item.bold ? {fontWeight: 600, marginBottom: 8} : {marginBottom: 8}}>{item.content[1]}</p>
+                        </div>
+                    </div>
+                )
             case 'caseProblemOutcome':
                 return (
                     <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>

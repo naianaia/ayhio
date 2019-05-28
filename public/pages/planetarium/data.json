@@ -21,25 +21,10 @@
         "content": null
     },
     {
-        "type": "caseProblemOutcome",
+        "type": "caseProblemRole",
         "content": [
             "R&D data science teams can build models, but deployment is inconsistent and usability is an issue for engineers outside the team. ",
-            "TODO"
-        ]
-    },
-    {
-        "type": "spacing"
-    },
-    {
-        "type": "heading",
-        "content": "Role"
-    },
-    {
-        "type": "listBullet",
-        "content": [
-            "Led design and product vision", 
-            "Built front-end in React and Redux", 
-            "Led sales"
+            "Led product design, frontend engineering, and sales."
         ]
     },
     {

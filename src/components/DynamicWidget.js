@@ -43,6 +43,11 @@ class DynamicWidget extends Component {
                 {this.state.pageData && this.state.pageData.map(item => {
                     return this.returnItem(item, Math.random())
                 })}
+                <div style={{height: 16}} />
+                {this.state.pageData && this.state.pageData[0].portfolio && 
+                    <p><a style={{textDecoration: 'none'}} href="https://ayh.io/portfolio" className="titleText filterText">
+                        <span style={{fontSize: 12}}>◀</span>&nbsp; Back to Portfolio</a></p>
+                }
             </div>
         );
     }
