@@ -33,10 +33,12 @@ class FlowItem extends Component {
                         </a>
                     }
                 </div>
-                <div className="flowMobile">
-                    <p className="titleText">{this.props.item.name}</p>
-                    <p className="normalText">{this.props.item.byline}</p>
-                </div>
+                {this.props.item.name !== "test" && 
+                    <div className="flowMobile">
+                        <p className="titleText">{this.props.item.name}</p>
+                        <p className="normalText">{this.props.item.byline}</p>
+                    </div>
+                }
             </div>
         );
     }
